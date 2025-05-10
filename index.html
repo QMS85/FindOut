@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Market Research Survey</h1>
+        <form id="surveyForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Cellphone/WhatsApp Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Survey Questions</legend>
+                <label for="q1">1. What does entrepreneurship mean to you?</label>
+                <textarea id="q1" name="q1" required></textarea>
+
+                <label for="q2">2. What do you think are the biggest challenges faced by entrepreneurs in South Africa?</label>
+                <textarea id="q2" name="q2" required></textarea>
+
+                <label for="q3">3. How has unemployment affected you or your community?</label>
+                <textarea id="q3" name="q3" required></textarea>
+
+                <label for="q4">4. Do you support South African companies? Why or why not?</label>
+                <textarea id="q4" name="q4" required></textarea>
+
+                <label for="q5">5. What products or services do you think South African businesses should focus on?</label>
+                <textarea id="q5" name="q5" required></textarea>
+
+                <label for="q6">6. Would you be interested in investing in small businesses for long-term share ownership?</label>
+                <select id="q6" name="q6" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Maybe">Maybe</option>
+                </select>
+
+                <label for="q7">7. If yes, how much would you be willing to invest monthly (in ZAR)?</label>
+                <textarea id="q7" name="q7"></textarea>
+
+                <label for="q8">8. What industries do you think are most promising for small business investment?</label>
+                <textarea id="q8" name="q8" required></textarea>
+
+                <label for="q9">9. Do you currently support any South African entrepreneurs or small businesses? If yes, how?</label>
+                <textarea id="q9" name="q9" required></textarea>
+
+                <label for="q10">10. What would encourage you to invest in or support South African small businesses?</label>
+                <textarea id="q10" name="q10" required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
